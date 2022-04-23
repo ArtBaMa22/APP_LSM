@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "279113558587",
+    "project_id": "ensename-7a390",
+    "storage_bucket": "ensename-7a390.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279113558587:android:5ef01323bd4eb3c02e8a1e",
+        "android_client_info": {
+          "package_name": "com.example.ensaame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279113558587-geuebp4lsmp6bfrvm3n6c1dqn2mah1l9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcrp5NzkaRtCjuSKz0MODDsFJae80MrJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279113558587-geuebp4lsmp6bfrvm3n6c1dqn2mah1l9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
