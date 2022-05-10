@@ -5,6 +5,9 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.activity_main.*
 
+enum class ProviderType{
+    BASIC
+}
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -14,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         val perfilFragment = PerfilFragment()
         val leccionesFragment =LeccionesFragment()
         val videosFragment =VideosFragment()
-        val avanceFragment =  AvanceFragment()
+        val avanceFragment =  SenasFragment()
 
         bottomNavigationView.setOnNavigationItemSelectedListener {
              when(it.itemId){
@@ -26,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                      setCurrentFragment(leccionesFragment)
                      true
                  }
-                 R.id.avance ->{
+                 R.id.senas ->{
                      setCurrentFragment(avanceFragment)
                      true
                  }

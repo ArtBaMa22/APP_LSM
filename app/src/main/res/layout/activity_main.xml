@@ -7,10 +7,11 @@
     tools:context=".MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
-        android:id = "@+id/containerView"
+        android:id="@+id/containerView"
+        android:name="com.example.ensaame.PerfilFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:name="com.example.ensaame.PerfilFragment"
+        android:background="#F6F6F6"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -22,11 +23,12 @@
         style="st"
         android:layout_width="0dp"
         android:layout_height="56dp"
-        app:menu="@menu/bottom_menu"
+        app:itemBackground="@color/purple_500"
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,8 +8,8 @@
         android:title="Lecciones"
         android:icon="@drawable/lecciones"/>
 
-    <item android:id="@+id/avance"
-        android:title="Avance"
+    <item android:id="@+id/senas"
+        android:title="Señas"
         android:icon="@drawable/avance"/>
 
     <item android:id="@+id/videos"
