@@ -1,12 +1,8 @@
 package com.example.ensaame
 
-import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 
-class VideosFragment : Fragment(R.layout.fragment_videos) {
+class VideosFragment : Fragment(R.layout.fragment_glosario) {
 
     }
 

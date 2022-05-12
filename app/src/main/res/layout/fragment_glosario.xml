@@ -4,12 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFEFE"
     tools:context=".VideosFragment">
 
     <ScrollView
         android:id="@+id/contenedorLetras"
         android:layout_width="386dp"
         android:layout_height="602dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -20,163 +26,232 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/btnA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="A" />
+                android:backgroundTint="#304FFE"
+                android:text="A"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="B" />
+                android:backgroundTint="#D50000"
+                android:text="B"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="C" />
+                android:backgroundTint="#AA00FF"
+                android:text="C"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnD"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="D" />
+                android:backgroundTint="#00BFA5"
+                android:text="D"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnE"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="E" />
+                android:backgroundTint="#00C853"
+                android:text="E"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnF"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="F" />
+                android:backgroundTint="#FF6D00"
+                android:text="F"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnG"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="G" />
+                android:backgroundTint="#FFAB00"
+                android:text="G"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnH"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="H" />
+                android:backgroundTint="#FFD600"
+                android:text="H"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnI"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="I" />
+                android:backgroundTint="#6200EA"
+                android:text="I"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnJ"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="J" />
+                android:backgroundTint="#DD2C00"
+                android:text="J"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnK"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="K" />
+                android:backgroundTint="#FFD600"
+                android:text="K"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnM"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="M" />
+                android:backgroundTint="#AA00FF"
+                android:text="M"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnN"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="N" />
+                android:backgroundTint="#2962FF"
+                android:text="N"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnÑ"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ñ" />
+                android:backgroundTint="#00C853"
+                android:text="Ñ"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnO"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="O" />
+                android:backgroundTint="#C51162"
+                android:text="O"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnP"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="P" />
+                android:backgroundTint="#00B8D4"
+                android:text="P"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnQ"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Q" />
+                android:backgroundTint="#D50000"
+                android:text="Q"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnR"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="R" />
+                android:backgroundTint="#0091EA"
+                android:text="R"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnS"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="S" />
+                android:backgroundTint="#AA00FF"
+                android:text="S"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnT"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="T" />
+                android:backgroundTint="#FFAB00"
+                android:text="T"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="U" />
+                android:backgroundTint="#00B8D4"
+                android:text="U"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="V" />
+                android:backgroundTint="#D50000"
+                android:text="V"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnW"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="W" />
+                android:backgroundTint="#64DD17"
+                android:text="W"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnX"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="X" />
+                android:backgroundTint="#FFD600"
+                android:text="X"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnY"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Y" />
+                android:backgroundTint="#C51162"
+                android:text="Y"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnZ"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Z" />
+                android:backgroundTint="#FF6D00"
+                android:text="Z"
+                android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>
+
+    <TextView
+        android:id="@+id/lblLetras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Letras"
+        android:textAlignment="viewStart"
+        android:textColor="#4A576C"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/contenedorLetras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
