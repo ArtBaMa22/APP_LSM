@@ -23,7 +23,7 @@
         style="st"
         android:layout_width="0dp"
         android:layout_height="56dp"
-        app:itemBackground="@color/purple_500"
+        app:itemBackground="@color/purple_700"
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

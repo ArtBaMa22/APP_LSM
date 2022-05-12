@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
                      setCurrentFragment(avanceFragment)
                      true
                  }
-                 R.id.videos ->{
+                 R.id.glosario ->{
                      setCurrentFragment(videosFragment)
                      true
                  }

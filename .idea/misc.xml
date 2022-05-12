@@ -16,10 +16,21 @@
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/fragment_videos.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/menu/bottom_menu.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.143" />
+        <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/drawable/avance.xml" value="0.23" />
+        <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/drawable/ic_glosario_background.xml" value="0.23" />
+        <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/drawable/ic_perfil_background.xml" value="0.23" />
+        <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/drawable/ic_perfil_foreground.xml" value="0.23" />
+        <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/layout/activity_main.xml" value="0.4431578947368421" />
+        <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/layout/fragment_lecciones.xml" value="0.15715579710144928" />
+        <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/layout/fragment_videos.xml" value="0.2115036231884058" />
+        <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/menu/bottom_menu.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/mipmap-anydpi-v26/ic_glosario.xml" value="0.23" />
+        <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.23" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
