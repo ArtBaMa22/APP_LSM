@@ -2,19 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/perfil"
-        android:icon="@drawable/ic_perfil_foreground"
+        android:icon="@drawable/ic_usuario"
         android:title="Perfil" />
 
-    <item android:id="@+id/lecciones"
-        android:title="Lecciones"
-        android:icon="@drawable/lecciones"/>
+    <item
+        android:id="@+id/lecciones"
+        android:icon="@drawable/ic_lecciones"
+        android:title="Lecciones" />
 
-    <item android:id="@+id/senas"
-        android:title="Señas"
-        android:icon="@drawable/avance"/>
+    <item
+        android:id="@+id/senas"
+        android:icon="@drawable/ic_se_as"
+        android:title="Señas" />
 
     <item
         android:id="@+id/glosario"
-        android:icon="@mipmap/ic_glosario_foreground"
+        android:icon="@drawable/ic_diccionario"
         android:title="Glosario" />
 </menu>
