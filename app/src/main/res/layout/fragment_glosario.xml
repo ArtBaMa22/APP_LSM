@@ -10,18 +10,15 @@
 
     <ScrollView
         android:id="@+id/contenedorLetras"
-        android:layout_width="386dp"
-        android:layout_height="602dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="7dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toBottomOf="@+id/lblLetras">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,6 +31,8 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#304FFE"
                 android:text="A"
+                android:textAlignment="center"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -43,6 +42,7 @@
                 android:backgroundTint="#D50000"
                 android:text="B"
                 android:textColor="#FFFFFF"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -51,6 +51,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#AA00FF"
                 android:text="C"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -59,6 +60,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#00BFA5"
                 android:text="D"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -67,6 +69,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#00C853"
                 android:text="E"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -75,6 +78,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#FF6D00"
                 android:text="F"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -83,6 +87,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#FFAB00"
                 android:text="G"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -91,6 +96,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#FFD600"
                 android:text="H"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -99,6 +105,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#6200EA"
                 android:text="I"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -107,6 +114,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#DD2C00"
                 android:text="J"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -115,6 +123,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#FFD600"
                 android:text="K"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -123,6 +132,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#AA00FF"
                 android:text="M"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -131,6 +141,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#2962FF"
                 android:text="N"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -139,6 +150,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#00C853"
                 android:text="Ñ"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -147,6 +159,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#C51162"
                 android:text="O"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -155,6 +168,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#00B8D4"
                 android:text="P"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -163,6 +177,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#D50000"
                 android:text="Q"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -171,6 +186,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#0091EA"
                 android:text="R"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -179,6 +195,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#AA00FF"
                 android:text="S"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -187,6 +204,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#FFAB00"
                 android:text="T"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -195,6 +213,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#00B8D4"
                 android:text="U"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -203,6 +222,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#D50000"
                 android:text="V"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -211,6 +231,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#64DD17"
                 android:text="W"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -219,6 +240,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#FFD600"
                 android:text="X"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -227,6 +249,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#C51162"
                 android:text="Y"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
@@ -235,6 +258,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#FF6D00"
                 android:text="Z"
+                android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>
@@ -243,6 +267,8 @@
         android:id="@+id/lblLetras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="39dp"
         android:fontFamily="sans-serif-light"
         android:text="Letras"
         android:textAlignment="viewStart"
