@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         val leccionesFragment =LeccionesFragment()
         val videosFragment =VideosFragment()
         val avanceFragment =  SenasFragment()
+        val letrasFragment = letras()
 
         bottomNavigationView.setOnNavigationItemSelectedListener {
              when(it.itemId){
@@ -35,6 +36,10 @@ class MainActivity : AppCompatActivity() {
                  }
                  R.id.glosario ->{
                      setCurrentFragment(videosFragment)
+                     true
+                 }
+                 R.id.contenedorLetras ->{
+                     setCurrentFragment(letrasFragment)
                      true
                  }
                else->false

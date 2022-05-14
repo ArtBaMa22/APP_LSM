@@ -29,7 +29,7 @@
                 android:id="@+id/btnA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#304FFE"
+                android:backgroundTint="#536DFE"
                 android:text="A"
                 android:textAlignment="center"
                 android:textSize="24sp"

@@ -42,7 +42,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
-        android:hint="Password"
+        android:hint="Contraseña"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,7 +58,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_rounded"
-        android:text="Iniciar Sesion"
+        android:text="Iniciar Sesión"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -82,7 +82,7 @@
         app:layout_constraintVertical_bias="0.679" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/btnGoogle"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="140dp"
@@ -91,7 +91,7 @@
         android:background="@drawable/button_social"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintEnd_toStartOf="@+id/btnFacebook"
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnRegist"
@@ -99,7 +99,7 @@
         app:srcCompat="@drawable/go" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/btnFacebook"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
