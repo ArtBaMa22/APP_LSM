@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ensaame">
+    package="com.example.ensaame" >
 
     <application
         android:allowBackup="true"
@@ -8,13 +8,37 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar">
+        android:theme="@style/Theme.AppCompat.NoActionBar" >
+        <activity
+            android:name=".nuevo_user"
+            android:exported="false" />
+        <activity
+            android:name=".Datos"
+            android:exported="false" />
+        <activity
+            android:name=".Menu"
+            android:exported="false"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".MenuPerfil"
+            android:exported="false"
+            android:label="@string/title_activity_menu_perfil"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Perfil"
+            android:exported="false"
+            android:label="@string/title_activity_perfil"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".fragment.RegistroUsuario"
+            android:exported="false" />
         <activity
             android:name=".Registro"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

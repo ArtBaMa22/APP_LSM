@@ -1,12 +1,17 @@
 package com.example.ensaame
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_registro.*
 
 enum class ProviderType{
-    BASIC
+    BASIC,
+    GOOGLE
 }
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         bottomNavigationView.setOnNavigationItemSelectedListener {
              when(it.itemId){
                  R.id.perfil ->{
+
                      setCurrentFragment(perfilFragment)
                      true
                  }
@@ -47,12 +53,13 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
     private fun setCurrentFragment(fragment: Fragment){
        supportFragmentManager.beginTransaction().apply {
            replace(R.id.containerView, fragment)
            commit()
        }
 
-
     }
+
 }

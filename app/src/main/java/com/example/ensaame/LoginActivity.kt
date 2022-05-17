@@ -20,19 +20,20 @@ class LoginActivity : AppCompatActivity() {
 
 
         btnRegist.setOnClickListener {
-            if (txtEmail.text.isNotEmpty() && txtPass.text.isNotEmpty()){
+        startActivity(Intent(this, Registro::class.java))
+        // if (txtEmail.text.isNotEmpty() && txtPass.text.isNotEmpty()){
 
-                FirebaseAuth.getInstance().createUserWithEmailAndPassword(txtEmail.text.toString(),
-                    txtPass.text.toString()).addOnCompleteListener {
-                        if (it.isSuccessful){
-                            showHome(it.result?.user?.email ?:"",ProviderType.BASIC)
-                        }else{
-                                showAlert()
-                        }
-                }
-            }
+             //   FirebaseAuth.getInstance().createUserWithEmailAndPassword(txtEmail.text.toString(),
+               //     txtPass.text.toString()).addOnCompleteListener {
+                 //       if (it.isSuccessful){
+                 //           showHome(it.result?.user?.email ?:"",ProviderType.BASIC)
+                   //     }else{
+                     //           showAlert()
+                       // }
+                //}
+            //}
         }
-        btnIniciarS.setOnClickListener {
+        btnGuardar.setOnClickListener {
             if (txtEmail.text.isNotEmpty() && txtPass.text.isNotEmpty()){
                 FirebaseAuth.getInstance().signInWithEmailAndPassword(txtEmail.text.toString(),
                     txtPass.text.toString()).addOnCompleteListener {

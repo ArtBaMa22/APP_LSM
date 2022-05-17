@@ -3,18 +3,54 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2115" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/drawable/button_rounded.xml" value="0.1535" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/drawable/button_rounded_border.xml" value="0.1535" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/drawable/button_social.xml" value="0.1535" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/drawable/fondo_degradado.xml" value="0.169" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/drawable/ic_diccionario.xml" value="0.2115" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/drawable/ic_glosario_background.xml" value="0.2115" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/drawable/ic_icons8_acerca_de.xml" value="0.15" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/drawable/ic_lecciones.xml" value="0.2115" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/drawable/ic_menu_puntos_vertical.xml" value="0.2115" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/drawable/ic_perfil_background.xml" value="0.1" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/drawable/ic_usuario.xml" value="0.2115" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/drawable/lecciones.xml" value="0.1635" />
-        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/drawable/perfil.xml" value="0.1975" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/drawable/side_nav_bar.xml" value="0.1" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_datos.xml" value="0.33" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_menu.xml" value="0.1933876811594203" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_menu_perfil.xml" value="0.1" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_nuevo_user.xml" value="0.22" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_perfil.xml" value="0.1933876811594203" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_registrar.xml" value="0.22" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_registro.xml" value="0.13043478260869565" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_registro_usuario.xml" value="0.22" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/app_bar_menu.xml" value="0.1933876811594203" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/app_bar_menu_perfil.xml" value="0.17083333333333334" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/app_bar_perfil.xml" value="0.1933876811594203" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/content_menu.xml" value="0.1933876811594203" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/content_menu_perfil.xml" value="0.1933876811594203" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/content_perfil.xml" value="0.1933876811594203" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/fragment_avance.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/fragment_datos.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/fragment_gallery.xml" value="0.1933876811594203" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/fragment_home.xml" value="0.17083333333333334" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/fragment_lecciones.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/fragment_perfil.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/fragment_perfil.xml" value="0.33" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/fragment_registro_user.xml" value="0.67" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/fragment_slideshow.xml" value="0.1933876811594203" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/fragment_videos.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/nav_header_menu_perfil.xml" value="0.17083333333333334" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/nav_header_perfil.xml" value="0.1933876811594203" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/menu/activity_main_drawer.xml" value="0.5" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/menu/activity_perfil_drawer.xml" value="0.17083333333333334" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/menu/bottom_menu.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/menu/menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/menu/menu_perfil.xml" value="0.17083333333333334" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/menu/perfil.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.143" />
         <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.23" />
         <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/drawable/avance.xml" value="0.23" />
@@ -24,7 +60,7 @@
         <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/drawable/ic_perfil_foreground.xml" value="0.23" />
         <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/drawable/lecciones.xml" value="0.23" />
         <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/layout/activity_login.xml" value="0.264" />
-        <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/layout/activity_main.xml" value="0.4431578947368421" />
         <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/layout/activity_registro.xml" value="0.21927083333333333" />
         <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/layout/fragment_glosario.xml" value="0.2" />
         <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/layout/fragment_lecciones.xml" value="0.15715579710144928" />
