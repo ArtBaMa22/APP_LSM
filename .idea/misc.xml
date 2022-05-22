@@ -69,6 +69,14 @@
         <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/menu/bottom_menu.xml" value="0.21927083333333333" />
         <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/mipmap-anydpi-v26/ic_glosario.xml" value="0.23" />
         <entry key="..\:/Users/jesus/Documents/GitHub/APP_LSM/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.23" />
+        <entry key="app/src/main/res/layout/activity_datos.xml" value="0.13148148148148148" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.13148148148148148" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_registro.xml" value="0.13148148148148148" />
+        <entry key="app/src/main/res/layout/fragment_a.xml" value="0.2859375" />
+        <entry key="app/src/main/res/layout/fragment_glosario.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_lecciones.xml" value="0.13148148148148148" />
+        <entry key="app/src/main/res/layout/fragment_letras.xml" value="0.25" />
       </map>
     </option>
   </component>
