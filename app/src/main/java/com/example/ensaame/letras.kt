@@ -14,7 +14,7 @@ import android.widget.Toast
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class letras : Fragment() {
+class letras : Fragment(R.layout.fragment_letras) {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null

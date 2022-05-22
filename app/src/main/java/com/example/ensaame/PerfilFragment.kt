@@ -11,20 +11,13 @@ import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import com.example.ensaame.Interface.IOnBackPressed
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_registro.*
-import kotlinx.android.synthetic.main.activity_registro.view.*
+
 
 import kotlinx.android.synthetic.main.fragment_perfil.*
 import kotlinx.coroutines.newSingleThreadContext
 
 
 class PerfilFragment : Fragment(R.layout.fragment_perfil), IOnBackPressed {
-    enum class ProviderType{
-        BASIC,
-        GOOGLE
-    }
-
-
     lateinit var opciones: Spinner
     lateinit var car: CardView
     lateinit var vista: View
@@ -34,35 +27,25 @@ class PerfilFragment : Fragment(R.layout.fragment_perfil), IOnBackPressed {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-
-
-
     ): View? {
-
-
         vista = inflater.inflate(R.layout.fragment_perfil, container, false)
-       car = vista.findViewById(R.id.cardDatos)
+        car = vista.findViewById(R.id.cardDatos)
         car.setOnClickListener({
-            val editProfileIntent = Intent(getActivity(), Datos::class.java)
-            getActivity()?.startActivity(editProfileIntent)
-
-            car
-
-            car = vista.findViewById(R.id.cerrarSesion)
-            car.setOnClickListener({
-                FirebaseAuth.getInstance().signOut()
-
-            })
+            val editProfileIntent = Intent(activity, Datos::class.java)
+            activity?.startActivity(editProfileIntent)
     })
+
+
+
             return vista
     }
 
-    private fun setup(email:String, provider: String){
-        txtViwEmail.text = email
-        textViewProvedor.text = provider
+    //private fun setup(email:String, provider: String){
+      //  txtViwEmail.text = email
+       // textViewProvedor.text = provider
 
 
-    }
+    //}
 
     override fun onBackPressed(): Boolean {
                 TODO("Not yet implemented")

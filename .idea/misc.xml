@@ -19,14 +19,14 @@
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/drawable/perfil.xml" value="0.1975" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/drawable/side_nav_bar.xml" value="0.1" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_datos.xml" value="0.33" />
-        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_menu.xml" value="0.1933876811594203" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_menu_perfil.xml" value="0.1" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_nuevo_user.xml" value="0.22" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_perfil.xml" value="0.1933876811594203" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_registrar.xml" value="0.22" />
-        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_registro.xml" value="0.13043478260869565" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_registro.xml" value="0.25" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/activity_registro_usuario.xml" value="0.22" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/app_bar_menu.xml" value="0.1933876811594203" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/app_bar_menu_perfil.xml" value="0.17083333333333334" />
@@ -37,8 +37,10 @@
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/fragment_avance.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/fragment_datos.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/fragment_gallery.xml" value="0.1933876811594203" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/fragment_glosario.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/fragment_home.xml" value="0.17083333333333334" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/fragment_lecciones.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/fragment_letras.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/fragment_perfil.xml" value="0.33" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/fragment_registro_user.xml" value="0.67" />
         <entry key="..\:/Users/artur/AndroidStudioProjects/Ensaame/app/src/main/res/layout/fragment_slideshow.xml" value="0.1933876811594203" />

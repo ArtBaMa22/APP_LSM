@@ -1,5 +1,6 @@
 package com.example.ensaame
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,29 +12,30 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-
         setup()
     }
+
 
     private fun setup(){
         title = "Autenticacion"
 
-
         btnRegist.setOnClickListener {
-        startActivity(Intent(this, Registro::class.java))
-        // if (txtEmail.text.isNotEmpty() && txtPass.text.isNotEmpty()){
+             if (txtEmail.text.isNotEmpty() && txtPass.text.isNotEmpty()){
 
-             //   FirebaseAuth.getInstance().createUserWithEmailAndPassword(txtEmail.text.toString(),
-               //     txtPass.text.toString()).addOnCompleteListener {
-                 //       if (it.isSuccessful){
-                 //           showHome(it.result?.user?.email ?:"",ProviderType.BASIC)
-                   //     }else{
-                     //           showAlert()
-                       // }
-                //}
-            //}
+                 FirebaseAuth.getInstance()
+                   .createUserWithEmailAndPassword(txtEmail.text.toString(),
+                 txtPass.text.toString()).addOnCompleteListener {
+                   if (it.isSuccessful){
+                      showHome(it.result?.user?.email ?:"",ProviderType.BASIC)
+                 }else{
+                       showAlert()
+             }
+            }
+            }
         }
-        btnGuardar.setOnClickListener {
+
+
+        btnIniciar.setOnClickListener {
             if (txtEmail.text.isNotEmpty() && txtPass.text.isNotEmpty()){
                 FirebaseAuth.getInstance().signInWithEmailAndPassword(txtEmail.text.toString(),
                     txtPass.text.toString()).addOnCompleteListener {
@@ -62,7 +64,7 @@ class LoginActivity : AppCompatActivity() {
             putExtra("email",email)
             putExtra("provider",provider.name)
         }
-          startActivity(homeIntent)
+        startActivity(homeIntent)
     }
 
 

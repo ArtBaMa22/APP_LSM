@@ -6,7 +6,5 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class LeccionesFragment : Fragment(R.layout.fragment_lecciones) {
-
-    }
+class LeccionesFragment : Fragment(R.layout.fragment_lecciones)
 

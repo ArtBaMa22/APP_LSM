@@ -1,28 +1,32 @@
 package com.example.ensaame
+
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.example.ensaame.letras
-
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_glosario.*
+import kotlinx.android.synthetic.main.fragment_glosario.view.*
+
 
 //class VideosFragment : Fragment(R.layout.fragment_glosario) {
-    class VideosFragment : Fragment() {
+class VideosFragment : Fragment() {
 
-        var misLetras : TextView? = null
-        var mibtnA : Button? = null
-        var mibtnB : Button? = null
+    var misLetras : TextView? = null
+    var mibtnA : Button? = null
+    var mibtnB : Button? = null
 
-        var miVista : View? = null
+    var miVista : View? = null
 
-        var carLetra : String? = "Letra"
-        var letraSel : String? =  "LetraA"
+    var carLetra : String? = "Letra"
+    var letraSel : String? =  "LetraA"
 
 
     override fun onCreateView(
@@ -103,5 +107,6 @@ import kotlinx.android.synthetic.main.fragment_glosario.*
 
 
 }//--------------- Termina el fragmento
+
 
 
