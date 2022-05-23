@@ -16,8 +16,8 @@ import kotlinx.android.synthetic.main.fragment_glosario.*
 import kotlinx.android.synthetic.main.fragment_glosario.view.*
 
 
-//class VideosFragment : Fragment(R.layout.fragment_glosario) {
-class VideosFragment : Fragment() {
+//class GlosarioFragment : Fragment(R.layout.fragment_glosario) {
+class GlosarioFragment : Fragment() {
 
     var misLetras : TextView? = null
     var mibtnA : Button? = null

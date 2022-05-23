@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E91E63"
-    android:backgroundTint="#03A9F4"
+    android:backgroundTint="#FCFDFD"
     tools:context=".letras">
 
         android:layout_width="match_parent"
@@ -13,7 +13,7 @@
         android:backgroundTint="#FBFBFB">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imgLetra"
             android:layout_width="148dp"
             android:layout_height="170dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline2"
@@ -34,6 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
+            android:textColor="#090909"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -44,6 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
+            android:textColor="#090909"
             app:layout_constraintBottom_toTopOf="@+id/guideline4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

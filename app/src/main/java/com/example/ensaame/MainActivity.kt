@@ -1,13 +1,8 @@
 package com.example.ensaame
 
-import android.content.Context
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
-import kotlinx.android.synthetic.main.activity_datos.*
 
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_perfil.*
@@ -42,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
         val perfilFragment = PerfilFragment()
         val leccionesFragment =LeccionesFragment()
-        val videosFragment =VideosFragment()
+        val glosarioFragment =GlosarioFragment()
         val avanceFragment =  SenasFragment()
         val letrasFragment = letras()
 recibe()
@@ -74,7 +69,7 @@ recibe()
                      true
                  }
                  R.id.glosario ->{
-                     setCurrentFragment(videosFragment)
+                     setCurrentFragment(glosarioFragment)
                      true
                  }
                  R.id.contenedorLetras ->{
