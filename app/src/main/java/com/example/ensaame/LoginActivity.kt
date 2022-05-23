@@ -26,7 +26,6 @@ class LoginActivity : AppCompatActivity() {
         authLayout.visibility = View.VISIBLE
     }
 
-
     private fun session(){
         val prefs = getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE)
         val email = prefs.getString("email",null)
@@ -50,8 +49,6 @@ class LoginActivity : AppCompatActivity() {
                          showAlert()
                     }
                 }
-
-
             }
         }
         btnGoogle.setOnClickListener {

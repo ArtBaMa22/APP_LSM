@@ -40,16 +40,12 @@ class PerfilFragment : Fragment(R.layout.fragment_perfil), IOnBackPressed {
     ): View? {
         vista = inflater.inflate(R.layout.fragment_perfil, containerView, false)
 
-
-
         if (arguments != null) {
             email1 = arguments?.getString("email")!!
             provider = arguments?.getString("provider")
-            Toast.makeText(getContext(), email1, Toast.LENGTH_SHORT).show()
+            Toast.makeText(getContext(), email1 + provider, Toast.LENGTH_SHORT).show()
         }
-
-
-        //   misLetra = vista?.findViewById(R.id.txtViwEmail) as EditText
+        // misLetra = vista?.findViewById(R.id.txtViwEmail) as EditText
         // misLetra.text = email1
 
         return vista
