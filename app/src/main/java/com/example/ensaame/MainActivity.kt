@@ -1,16 +1,18 @@
 package com.example.ensaame
 
+import android.content.Context
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
+import kotlinx.android.synthetic.main.activity_datos.*
 
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_perfil.*
 
 
-enum class ProviderType{
-    BASIC,
-    GOOGLE
-}
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -18,18 +20,50 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+
+     //   val bundle: Bundle? = intent.extras
+        // val bundle: Bundle? = null
+       // val email: String? = bundle?.getString("email")
+        //val provider: String? = bundle?.getString("provider")
+        //setup(email ?:"",provider ?:"")
+
+        // Guardado de datos
+
+
+
+
+       // val prefs = getSharedPreferences(getString(R.string.prefs_file),Context.MODE_PRIVATE).edit()
+       // prefs.putString("email",email)
+        //prefs.putString("provider",provider)
+        //prefs.apply()
+
+
+
+
         val perfilFragment = PerfilFragment()
         val leccionesFragment =LeccionesFragment()
         val videosFragment =VideosFragment()
         val avanceFragment =  SenasFragment()
         val letrasFragment = letras()
+recibe()
+
+        // Guardado de datos
+      // val prefs = getSharedPreferences(getString(R.string.prefs_file),Context.MODE_PRIVATE).edit()
+        //prefs.putString("email",email)
+        //prefs.putString("provider",provider)
+       //prefs.apply()
+
+
 
         bottomNavigationView.setOnNavigationItemSelectedListener {
-             when(it.itemId){
+
+
+            when(it.itemId){
                  R.id.perfil ->{
 
                      setCurrentFragment(perfilFragment)
                      true
+
                  }
                  R.id.lecciones ->{
                      setCurrentFragment(leccionesFragment)
@@ -51,6 +85,36 @@ class MainActivity : AppCompatActivity() {
              }
         }
     }
+    private fun setup(email:String, provider: String){
+        txtViwEmail.text = email
+        textViewProvedor.text = provider
+    }
+
+    private fun recibe(){
+
+        val bundle: Bundle? = intent.extras
+        val email: String? = bundle?.getString("email")
+        val provider: String? = bundle?.getString("provider")
+        valores(email ?:"",provider ?:"")
+    }
+
+
+    private fun valores(email:String,provider: String){
+        val bundle = Bundle()
+        val mFragmentManager = supportFragmentManager
+        val mFragmentTransaction = mFragmentManager.beginTransaction()
+        bundle.putString("email", email.toString())
+        bundle.putString("provider", email)
+        var frag = PerfilFragment()
+        frag.arguments = bundle
+        mFragmentTransaction.add(R.id.containerView, frag).commit()
+
+
+//        val mEditText = findViewById<EditText>(R.id.editText)
+  //      val mButton = findViewById<Button>(R.id.button)
+
+    }
+
 
 
     private fun setCurrentFragment(fragment: Fragment){
@@ -60,5 +124,7 @@ class MainActivity : AppCompatActivity() {
        }
 
     }
+
+
 
 }

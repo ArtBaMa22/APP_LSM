@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fonfoperfil"
+    android:background="@drawable/fondo_degradado"
     tools:context=".PerfilFragment">
 
 
@@ -24,10 +24,10 @@
         android:id="@+id/idGrid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@+id/nombre"
         android:padding="4dp"
         app:columnCount="2"
-        app:rowCount="3"
-        android:layout_below="@+id/nombre">
+        app:rowCount="3">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardDatos"
@@ -201,7 +201,6 @@
         android:layout_marginStart="75dp"
         android:layout_marginTop="153dp"
         android:layout_marginEnd="51dp"
-        android:text="Email"
         android:textColor="#050505" />
 
     <TextView
