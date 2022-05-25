@@ -29,16 +29,16 @@ class letras : Fragment(R.layout.fragment_letras) {
             val view =  inflater.inflate(R.layout.fragment_letras, container, false)
 
             miVista = view
-            miTexto1 = miVista?.findViewById(R.id.textView)
-            miTexto2 = miVista?.findViewById(R.id.textView2)
-            imgLetra = miVista?.findViewById(R.id.imageView)
+            miTexto1 = miVista?.findViewById(R.id.lblLetra)
+            miTexto2 = miVista?.findViewById(R.id.lblDescLetr)
+            imgLetra = miVista?.findViewById(R.id.imgLetra)
 
         Toast.makeText(context , "El valor de letra es "+Letra, Toast.LENGTH_SHORT).show()
 
             when(Letra) {
                 "A" -> {
-                    miTexto1?.text = "Se eligió A"
-                    miTexto2?.text = "Se eligió A"
+                    miTexto1?.text = "A"
+                    miTexto2?.text = "Con la mano cerrada, se muestran las uñas y se estira el dedo pulgar hacia un lado. La palma mira al frente"
                     imgLetra?.setImageResource(R.drawable.google)
 
                 }
