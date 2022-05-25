@@ -6,11 +6,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import androidx.core.content.ContextCompat.startActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuthException
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
@@ -44,7 +44,7 @@ class LoginActivity : AppCompatActivity() {
             if (txtEmail.text.isNotEmpty() && txtPass.text.isNotEmpty()){
                 FirebaseAuth.getInstance().createUserWithEmailAndPassword(txtEmail.text.toString(), txtPass.text.toString()).addOnCompleteListener {
                     if (it.isSuccessful){
-                        showHome(it.result?.user?.email ?: "",ProviderType.BASIC)
+                        showHome2(it.result?.user?.email ?: "",ProviderType.BASIC)
                     }else{
                          showAlert()
                     }
@@ -58,19 +58,33 @@ class LoginActivity : AppCompatActivity() {
 
         }
 
-        btnIniciar.setOnClickListener {
-            if (txtEmail.text.isNotEmpty() && txtPass.text.isNotEmpty()){
-                FirebaseAuth.getInstance().signInWithEmailAndPassword(txtEmail.text.toString(),
-                    txtPass.text.toString()).addOnCompleteListener{
-                    if (it.isSuccessful){
-                        showHome(it.result?.user?.email ?:"",ProviderType.BASIC)
-                    }else{
-                        showAlert()
-                    }
-                }
-            }
-        }
-    }
+
+              try{
+                  btnGuardar.setOnClickListener {
+                      if (txtEmail.text.isNotEmpty() && txtPass.text.isNotEmpty()){
+                          FirebaseAuth.getInstance().signInWithEmailAndPassword(txtEmail.text.toString(),
+                              txtPass.text.toString()).addOnCompleteListener{
+                                  if (it.isSuccessful){
+                              showHome(it.result?.user?.email ?:"",ProviderType.BASIC)
+                                }
+                              else{
+                                showAlert()
+                              }
+                          }
+                      }
+                  }
+              } catch (e: FirebaseAuthException){
+                  if(e.message.toString() == "user-not-found"){
+                      val toast = Toast.makeText(this,"Usuario no Encontado", Toast.LENGTH_SHORT).show()
+
+                  }
+
+              }
+          }
+
+
+
+
 
     private fun showAlert(){
         val builder = AlertDialog.Builder(this)
@@ -104,7 +118,7 @@ class LoginActivity : AppCompatActivity() {
 
 private fun showHome2(email: String, provider: ProviderType){
 
-        val homeIntent = Intent(this,MainActivity::class.java).apply {
+        val homeIntent = Intent(this,Datos::class.java).apply {
             putExtra("email",email)
             putExtra("provider",provider.name)
         }

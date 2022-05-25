@@ -8,6 +8,16 @@
     tools:context=".SenasFragment">
 
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
     <TextView
         android:id="@+id/nombre"
         android:layout_width="match_parent"
@@ -29,6 +39,90 @@
         android:padding="4dp"
         app:columnCount="2"
         app:rowCount="6">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cadAños"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#F8F6F6"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_icons8_documento"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Frutas"
+                    android:textAlignment="center"
+                    android:textColor="#ffcc00"
+                    android:textSize="16dp"
+                    android:textStyle="bold"></TextView>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Meses"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#F8F6F6"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_icons8_documento"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Frutas"
+                    android:textAlignment="center"
+                    android:textColor="#ffcc00"
+                    android:textSize="16dp"
+                    android:textStyle="bold"></TextView>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardDatos"
@@ -70,6 +164,7 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
 
 
         <androidx.cardview.widget.CardView

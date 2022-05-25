@@ -56,9 +56,7 @@ class PerfilFragment : Fragment(R.layout.fragment_perfil), IOnBackPressed {
         cardDatos.setOnClickListener {
             val editProfileIntent = Intent(activity, Datos::class.java)
             startActivity(editProfileIntent)
-
         }
-
         AcercaDe.setOnClickListener {
             val frag= AcercaDeFragment()
             var fr = getFragmentManager()?.beginTransaction()
@@ -72,8 +70,6 @@ class PerfilFragment : Fragment(R.layout.fragment_perfil), IOnBackPressed {
            // prefs.clear
             //prefs.apply()
         }
-
-
     }
 
     //cerra sesion

@@ -1,11 +1,13 @@
 package com.example.ensaame
 
 import android.content.Context
-import android.content.SharedPreferences
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_datos.*
-import kotlinx.android.synthetic.main.fragment_perfil.*
+import java.io.IOException
+
 
 enum class ProviderType{
     BASIC,
@@ -13,6 +15,9 @@ enum class ProviderType{
 }
 
 class Datos : AppCompatActivity() {
+
+    private val db = FirebaseFirestore.getInstance()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_datos)
@@ -22,6 +27,7 @@ class Datos : AppCompatActivity() {
         val provider: String? = bundle?.getString("provider")
         setup(email ?:"",provider ?:"")
 
+
         // Guardado de datos
 
         val prefs = getSharedPreferences(getString(R.string.prefs_file),Context.MODE_PRIVATE).edit()
@@ -30,7 +36,30 @@ class Datos : AppCompatActivity() {
         prefs.apply()
     }
     private fun setup(email:String, provider: String){
-     textView4.text = email
-        textView5.text = provider
+     txtCorreo.text = email
+        txtProvedor.text = provider
+        btnGuardar.setOnClickListener {
+          try {
+              db.collection("users").document(email).set(
+                  hashMapOf(
+                      "provider" to provider,
+                      "Nombre" to txtNombre.text.toString(),
+                      "ApellidoPaterno" to txtApellidoP.text.toString(),
+                      "ApellidoMaterno" to txtApellidoM.text.toString(),
+                      "Edad" to edad.text.toString(),
+                      "Telefono" to Tel.text.toString(),
+                      "Correo" to txtCorreo.text.toString(),
+                      "Sexo" to txtSexo.text.toString(),
+                  )
+              )
+              val toast = Toast.makeText(this, "Se Guardo Correctamente", Toast.LENGTH_SHORT)
+
+          } catch (e: IOException){
+
+
+
+          //  val toast = Toast.makeText(this, "Algo Salió Mal", Toast.LENGTH_SHORT)
+          }
+        }
     }
 }
