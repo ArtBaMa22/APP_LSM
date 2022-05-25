@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 
@@ -15,6 +16,7 @@ class letras : Fragment(R.layout.fragment_letras) {
     var miVista : View? = null
     var miTexto1 : TextView? = null
     var miTexto2 : TextView? = null
+    var imgLetra : ImageView? = null
 
     var Letra : String? = "Letra"
 
@@ -29,6 +31,7 @@ class letras : Fragment(R.layout.fragment_letras) {
             miVista = view
             miTexto1 = miVista?.findViewById(R.id.textView)
             miTexto2 = miVista?.findViewById(R.id.textView2)
+            imgLetra = miVista?.findViewById(R.id.imageView)
 
         Toast.makeText(context , "El valor de letra es "+Letra, Toast.LENGTH_SHORT).show()
 
@@ -36,9 +39,137 @@ class letras : Fragment(R.layout.fragment_letras) {
                 "A" -> {
                     miTexto1?.text = "Se eligió A"
                     miTexto2?.text = "Se eligió A"
+                    imgLetra?.setImageResource(R.drawable.google)
 
                 }
                 "B" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+                    imgLetra?.setImageResource(R.drawable.facebok)
+
+
+                }
+                "C" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "D" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "E" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "F" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "G" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "H" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "I" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "J" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "K" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "L" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "M" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "N" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "Ñ" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "O" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "P" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "Q" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "R" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "S" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "T" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "U" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "V" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "W" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "X" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "Y" -> {
+                    miTexto1?.text = "Se eligió B"
+                    miTexto2?.text = "Se eligió B"
+
+                }
+                "Z" -> {
                     miTexto1?.text = "Se eligió B"
                     miTexto2?.text = "Se eligió B"
 
