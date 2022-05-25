@@ -14,8 +14,8 @@
 
         <ImageView
             android:id="@+id/imgLetra"
-            android:layout_width="148dp"
-            android:layout_height="170dp"
+            android:layout_width="176dp"
+            android:layout_height="184dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +34,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
-            android:textColor="#090909"
+            android:textColor="#545151"
+            android:textSize="24sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
             app:layout_constraintEnd_toStartOf="@+id/guideline6"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
@@ -45,7 +47,7 @@
             android:layout_width="65dp"
             android:layout_height="13dp"
             android:text="TextView"
-            android:textColor="#090909"
+            android:textColor="#545151"
             app:layout_constraintBottom_toTopOf="@+id/guideline4"
             app:layout_constraintEnd_toStartOf="@+id/guideline6"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
@@ -63,7 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="518dp" />
+            app:layout_constraintGuide_begin="569dp" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline5"

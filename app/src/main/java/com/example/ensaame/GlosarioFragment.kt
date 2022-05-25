@@ -23,6 +23,9 @@ class GlosarioFragment : Fragment() {
     var mibtnA : Button? = null
     var mibtnB : Button? = null
 
+
+
+
     var miVista : View? = null
 
     var carLetra : String? = "Letra"
@@ -50,12 +53,9 @@ class GlosarioFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        misLetras?.text = "Si se creó la vista"
 
         mibtnA?.setOnClickListener(){
             letraSel = "A"
-
-            Toast.makeText(context , "========= Claro que entró A==========", Toast.LENGTH_SHORT).show()
 
             //Le pasamos los datos al fragmento
             val bundle = Bundle()
@@ -80,8 +80,6 @@ class GlosarioFragment : Fragment() {
         mibtnB?.setOnClickListener(){
             letraSel = "B"
 
-            Toast.makeText(context , "========= Claro que entró B==========", Toast.LENGTH_SHORT).show()
-
             //Le pasamos los datos al fragmento
             val bundle = Bundle()
             bundle.putString("carLetra", letraSel )
@@ -101,6 +99,28 @@ class GlosarioFragment : Fragment() {
             fr?.commit()
 
         } //Del listener botón B
+
+        btnC.setOnClickListener {
+            letraSel = "C"
+
+            //Le pasamos los datos al fragmento
+            val bundle = Bundle()
+            bundle.putString("carLetra", letraSel )
+            var frag = letras()
+
+            frag.arguments = bundle
+
+            //Cuando el usuario de click en este botón, este fragmento debe reemplazarse con el nuevo
+            //fragmento, que es el de la ubicación del Plantel
+
+            var fr = getFragmentManager()?.beginTransaction()
+
+            fr?.replace(R.id.containerView, frag)
+
+            fr?.addToBackStack(null)
+
+            fr?.commit()
+        }
 
     }//-------------------------------------- Termina el OnViewCreated
 

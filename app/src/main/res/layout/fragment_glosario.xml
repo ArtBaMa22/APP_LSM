@@ -270,7 +270,7 @@
         android:layout_marginTop="38dp"
         android:layout_marginBottom="39dp"
         android:fontFamily="sans-serif-light"
-        android:text="Letras_ok"
+        android:text="Letras"
         android:textAlignment="viewStart"
         android:textColor="#4A576C"
         android:textSize="34sp"
