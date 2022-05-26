@@ -20,16 +20,9 @@ import kotlinx.android.synthetic.main.fragment_glosario.view.*
 class GlosarioFragment : Fragment() {
 
     var misLetras : TextView? = null
-    var mibtnA : Button? = null
-    var mibtnB : Button? = null
-
-
-
-
     var miVista : View? = null
-
     var carLetra : String? = "Letra"
-    var letraSel : String? =  "LetraA"
+    var letraSel : String? =  ""
 
 
     override fun onCreateView(
@@ -41,8 +34,6 @@ class GlosarioFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_glosario, container, false)
 
         miVista = view
-        mibtnA = miVista?.findViewById(R.id.btnA)
-        mibtnB = miVista?.findViewById(R.id.btnB)
 
         misLetras = miVista?.findViewById(R.id.lblLetras)
 
@@ -54,30 +45,15 @@ class GlosarioFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-        mibtnA?.setOnClickListener(){
+        btnA.setOnClickListener(){
             letraSel = "A"
 
-            //Le pasamos los datos al fragmento
-            val bundle = Bundle()
-            bundle.putString("carLetra", letraSel )
-            var frag = letras()
-
-            frag.arguments = bundle
-
-            //Cuando el usuario de click en este botón, este fragmento debe reemplazarse con el nuevo
-            //fragmento, que es el de la ubicación del Plantel
-
-            var fr = getFragmentManager()?.beginTransaction()
-
-            fr?.replace(R.id.containerView, frag)
-
-            fr?.addToBackStack(null)
-
-            fr?.commit()
+            setCurrentFragment(letraSel!!)
 
         } //Del listener botón A
-        //----------------------------
-        mibtnB?.setOnClickListener(){
+
+
+        btnB.setOnClickListener(){
             letraSel = "B"
 
             //Le pasamos los datos al fragmento
@@ -123,10 +99,26 @@ class GlosarioFragment : Fragment() {
         }
 
     }//-------------------------------------- Termina el OnViewCreated
+    private fun setCurrentFragment(ltrSelec : String  ){
+
+        //Le pasamos los datos al fragmento
+        val bundle = Bundle()
+        bundle.putString("carLetra", ltrSelec )
+        var frag = letras()
+
+        frag.arguments = bundle
 
 
+        var fr = getFragmentManager()?.beginTransaction()
 
-}//--------------- Termina el fragmento
+        fr?.replace(R.id.containerView, frag)
+
+        fr?.addToBackStack(null)
+
+        fr?.commit()
+        }
+
+    } //--------------- Termina el fragmento
 
 
 

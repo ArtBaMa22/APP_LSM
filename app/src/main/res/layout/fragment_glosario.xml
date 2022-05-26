@@ -127,6 +127,21 @@
                 android:textStyle="bold" />
 
             <Button
+                android:id="@+id/btnL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="L"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#40C4FF"
+                android:text="LL"
+                android:textSize="24sp" />
+
+            <Button
                 android:id="@+id/btnM"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -188,6 +203,14 @@
                 android:text="R"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnRR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF4081"
+                android:text="RR"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/btnS"
